@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import './demo/listview_demo.dart';
 import './demo/drawer_demo.dart';
 import './demo/bottom_navigation_bar_demo.dart';
+import './demo/basic_demo.dart';
  
  void main() => runApp(App());
 
@@ -64,7 +65,8 @@ import './demo/bottom_navigation_bar_demo.dart';
         body: TabBarView(
           children: <Widget>[
             ListViewDemo(),
-            Text('这是第二个页面'),
+            // Text('这是第二个页面'),
+            BasicDemo(),
             Icon(Icons.directions_bike,size: 128,color: Colors.black12),
           ],
         ),
