@@ -4,7 +4,8 @@ class LayoutDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Row(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
           IconBadge(Icons.pool),
           IconBadge(Icons.beach_access),
