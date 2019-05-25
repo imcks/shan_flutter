@@ -15,7 +15,12 @@ import './demo/navigation_demo.dart';
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: Home(),
-      home: NavigationDemo(),
+      // home: NavigationDemo(),
+      initialRoute: '/',
+      routes: {
+        '/': (BuildContext context) => Home(),
+        '/about': (BuildContext context) => Page(title: 'About'),
+      },
       theme: ThemeData(
         primarySwatch: Colors.yellow,
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
