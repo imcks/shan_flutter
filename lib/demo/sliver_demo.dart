@@ -7,6 +7,22 @@ class SliverDemo extends StatelessWidget {
     return Scaffold(
       body: CustomScrollView(
         slivers: <Widget>[
+          SliverAppBar(
+            title: Text('SHAN FLUTTER'),
+            // pinned: true,
+            floating: true,
+            expandedHeight: 100.0,
+            flexibleSpace: FlexibleSpaceBar(
+              title: Text(
+                'THIS IS FLUTTER',
+                style: TextStyle(
+                  fontSize: 12.0,
+                  letterSpacing: 3.0,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ),
+          ),
           SliverSafeArea(
             sliver: SliverPadding(
               padding: EdgeInsets.all(8.0),
