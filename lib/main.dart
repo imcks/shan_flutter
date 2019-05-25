@@ -14,7 +14,7 @@ import './demo/sliver_demo.dart';
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: Home(),
-      home: SliverDemo(),
+      home: Home(),
       theme: ThemeData(
         primarySwatch: Colors.yellow,
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
@@ -30,7 +30,7 @@ import './demo/sliver_demo.dart';
    @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3,
+      length: 4,
       child: Scaffold(
       backgroundColor: Colors.grey[100],
         appBar: AppBar(
@@ -62,16 +62,17 @@ import './demo/sliver_demo.dart';
               Tab(icon: Icon(Icons.local_florist)),
               Tab(icon: Icon(Icons.change_history)),
               Tab(icon: Icon(Icons.directions_bike)),
+              Tab(icon: Icon(Icons.view_list)),
             ],
           ),
         ),
         body: TabBarView(
           children: <Widget>[
             ListViewDemo(),
-            // Text('这是第二个页面'),
             BasicDemo(),
-            // Icon(Icons.directions_bike,size: 128,color: Colors.black12),
             LayoutDemo(),
+            SliverDemo(),
+
           ],
         ),
         drawer: DrawerDemo(),
